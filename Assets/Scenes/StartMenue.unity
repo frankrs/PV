@@ -318,7 +318,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Upload Pano
+  m_Text: More Info
 --- !u!222 &344906057
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -885,7 +885,6 @@ GameObject:
   - 222: {fileID: 989043183}
   - 114: {fileID: 989043182}
   - 114: {fileID: 989043181}
-  - 114: {fileID: 989043180}
   m_Layer: 5
   m_Name: UploadPanno
   m_TagString: Untagged
@@ -911,18 +910,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &989043180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 989043178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83c0e77c97a98374ab45cb724c06cbd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  url: http://viral3d.com/upload/pl/jquery/plupload.html
 --- !u!114 &989043181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,8 +949,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 989043180}
-        m_MethodName: UploadWebSite
+      - m_Target: {fileID: 2126519230}
+        m_MethodName: MoreInfo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1531,7 +1518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1282766727
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1546,10 +1533,10 @@ RectTransform:
   - {fileID: 200360214}
   m_Father: {fileID: 895383321}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 137.25, y: -48.2468376}
+  m_SizeDelta: {x: 274.5, y: 96.4936752}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1282766728
 MonoBehaviour:
@@ -2181,6 +2168,7 @@ MonoBehaviour:
   loadButton: {fileID: 239269981}
   searchMenu: {fileID: 1104402602}
   genButton: {fileID: 100002, guid: a12c07d307a041944b2f2c14f71e5b97, type: 2}
+  moreInfoURL: http://www.viral3d.com/pano_viewer_app_help.shtml
 --- !u!4 &2126519231
 Transform:
   m_ObjectHideFlags: 0

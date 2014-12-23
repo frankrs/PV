@@ -31,13 +31,15 @@ public class StartMenuManager : MonoBehaviour {
 
 	public Transform searchMenu;
 	public GameObject genButton;
+
+	public string moreInfoURL;
 	
 
 	void Start()
 	{
 		// kick off the TTS system so it is ready for use later
 		EtceteraAndroid.initTTS();
-		Samples();
+		//Samples();
 	}
 
 	void OnEnable()
@@ -230,7 +232,15 @@ public class StartMenuManager : MonoBehaviour {
 		KillPanButtons();
 		SetUpButtons();
 	}
-	
+
+
+	public void MoreInfo () {
+		Application.OpenURL(moreInfoURL);
+	}
+
+
+
+
 }
 
 
