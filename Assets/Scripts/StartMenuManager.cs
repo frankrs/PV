@@ -205,8 +205,14 @@ public class StartMenuManager : MonoBehaviour {
 		EtceteraAndroid.promptForPictureFromAlbum(4096,2048,"Pano");
 	}
 
-	public void ViewPanno(){
+	public void ViewVRPanno(){
+		Pano.viewer = Viewer.VR;
 		Application.LoadLevel(2);
+	}
+
+	public void ViewPanno(){
+		Pano.viewer = Viewer.Reg;
+		Application.LoadLevel(3);
 	}
 
 	public void TakePano(){
@@ -247,9 +253,15 @@ public class StartMenuManager : MonoBehaviour {
 
 public static class Pano {
 
+
 	public static Texture2D pic;
+	public static Viewer viewer;
 }
 
+[System.Serializable]
+public enum Viewer{
+	VR,Reg
+}
 
 [System.Serializable]
 public class CatagoryNode{
